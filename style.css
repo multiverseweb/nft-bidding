@@ -85,6 +85,7 @@ nav ul li:hover {
 .fixed {
     top: 0;
     position: sticky;
+    transition-duration: 1s;
 }
 
 .statue {
@@ -200,6 +201,72 @@ footer {
 #show{
     display: none;
 }
+
+.block{
+    height:10px;
+    width:10px;
+    border-radius: 2px;
+    background-color: yellow;
+    box-shadow: 0px 0px 20px yellow, 0px 0px 20px orange;
+    margin-left: 3vw;
+    position: absolute;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#b1{
+    top:89vh;
+}
+#b2{
+    top:calc(135vh - 5px);
+}
+#b3{
+    top:calc(135vh - 5px);
+    left:27vw;
+}
+@keyframes blink{
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0px 0px 20px yellow, 0px 0px 20px orange;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+
+.connect{
+    width:1px;
+    position: absolute;
+    margin-left: calc(3vw + 5px);
+    background-color: goldenrod;
+    z-index: -1;
+    transition-duration: 1s;
+}
+#c1{
+    top:89vh;
+    height: 0vh;
+}
+#c2{
+    top:135vh;
+    height: 1px;
+    width: 0vw;
+}
+.info{
+    width: 25vw;
+    margin-left: 5vw;
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    margin-top: -20vh;
+    position: absolute;
+    transition-duration: 1s;
+    opacity: 0;
+}
+h1{
+    text-align: center;
+}
+
 @media(max-width:900px) {
     #show{
         display: block;
@@ -234,7 +301,7 @@ footer {
     }
 
     .square {
-        display: none;
+       display: none;
     }
 
     .fixed {
@@ -259,7 +326,7 @@ footer {
         margin-top: 30px;
     }
     .container{
-        margin-top: 10vh;
+        margin-top: 70vh;
     }
 
 
@@ -275,5 +342,10 @@ footer {
 
     .chart {
         width: calc(90vw - 50px);
+    }
+    .info{
+        width: 90vw;
+        top:112vh;
+        padding-left: 10px;
     }
 }
