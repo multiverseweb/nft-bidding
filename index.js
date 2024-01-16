@@ -42,7 +42,7 @@ function show() {
     document.getElementById("hide").style = "display:block";
     document.getElementById("show").style = "display:none";
     nav.style.backgroundColor = "rgba(177, 177, 177, 0.14)";
-    nav.style.backdropFilter = "blur(25px)";
+    nav.style.backdropFilter = "blur(15px)";
 }
 function hide() {
     document.getElementById("show").style = "display:block";
