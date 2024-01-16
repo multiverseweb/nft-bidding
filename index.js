@@ -29,3 +29,17 @@ function startCounter() {
     }, 100);
 }
 window.onload = startCounter;
+
+
+function show() {
+    document.getElementById("list").style.display = "block";
+    document.getElementById("hide").style = "display:block";
+    document.getElementById("show").style = "display:none";
+    nav.style.backgroundColor = "rgba(177, 177, 177, 0.14)";
+    nav.style.backdropFilter = "blur(25px)";
+}
+function hide() {
+    document.getElementById("show").style = "display:block";
+    document.getElementById("list").style.display = "none";
+    document.getElementById("hide").style = "display:none";
+}
